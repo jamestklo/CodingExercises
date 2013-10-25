@@ -30,9 +30,4 @@ public class Point2D implements Point {
 		}		
 		return neighbors;
 	}
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

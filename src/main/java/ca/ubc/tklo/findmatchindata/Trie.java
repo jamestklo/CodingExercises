@@ -6,10 +6,10 @@ import java.util.Map;
 import java.util.Set;
 
 public class Trie {
-	Point head = null;
-	Map<Point, Trie> expansions = null;
+	Point head;
+	Map<Point, Trie> expansions;
 	public Trie(Point head) {
-		this.head = head;
+		this.head = head;		
 	}
 	public Set<Trie> expand(DataDimension dd) {
 		if (this.expansions != null) {
@@ -43,5 +43,3 @@ public class Trie {
 		return sum;
 	}
 }
-
-

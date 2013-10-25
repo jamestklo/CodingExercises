@@ -30,8 +30,9 @@ public class Char2D implements DataDimension {
 		return true;
 	}
 	public boolean check(Point point) {
-		if (this.isWithinRange(point) && isCurrentDefined) {
-			return current == data[point.getY()][point.getX()];	
+		if ((point instanceof Point2D) && this.isWithinRange(point) && isCurrentDefined) {
+			Point2D p2d = (Point2D) point;
+			return current == data[p2d.getY()][p2d.getX()];				
 		}
 		return false;
 	}
